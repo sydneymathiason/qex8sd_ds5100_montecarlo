@@ -23,13 +23,6 @@ class Die:
 
     Attributes:
         faces (numpy.ndarray): An array representing the possible faces of the die.
-
-    Raises:
-        TypeError: If the faces parameter is not a NumPy array.
-        ValueError: If the faces are not all unique.
-
-    Note:
-        The Die object starts with equal weights for all faces.
     """
     def __init__(self, faces):
         """
