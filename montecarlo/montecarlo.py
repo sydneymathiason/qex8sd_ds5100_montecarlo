@@ -69,7 +69,7 @@ class Die:
         if face not in self._die_state.index:
             raise IndexError("Invalid face value.")
             
-        if not isinstance(new_weight, (int, float)):
+        if not isinstance(new_weight, (int, float)) or str(new_weight).isnumeric():
             raise TypeError("Invalid weight type.")
         
         self._die_state.at[face, "weights"] = new_weight
