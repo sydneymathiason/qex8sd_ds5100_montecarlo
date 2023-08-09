@@ -21,17 +21,26 @@ from montecarlo.montecarlo import Die, Game, Analyzer
 
 ##### Die
 ```
-
+die = Die(np.array([1,2,3,4,5,6]))
+die.change_weight(6, 5)
+die.show_state()
 ```
 
 ##### Game
 ```
-
+rolls = 10000
+game = Game([die, die, die])
+game.play(rolls)
+game.show_result()
 ```
 
 ##### Analyzer
 ```
-
+A = Analyzer(game)
+A.jackpot()
+A.face_counts()
+A.combo_count()
+A.permutation_count()
 ```
 
 
