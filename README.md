@@ -21,26 +21,26 @@ from montecarlo.montecarlo import Die, Game, Analyzer
 
 ##### Die
 ```
-die = Die(np.array([1,2,3,4,5,6]))
-die.change_weight(6, 5)
-die.show_state()
+die = Die(np.array([1,2,3,4,5,6])) #create die with array of faces
+die.change_weight(6, 5) #change weight of a face by specifying face and weight
+die.roll(5) #roll die a give number of times
+die.show_state() #show current state of die with 
 ```
 
 ##### Game
 ```
-rolls = 10000
-game = Game([die, die, die])
-game.play(rolls)
-game.show_result()
+game = Game([die, die, die]) #create game with list of Die objects
+game.play(1000) #play game by specifying number of rolls
+game.show_result() #show results of most recent game play in a data frame
 ```
 
 ##### Analyzer
 ```
-A = Analyzer(game)
-A.jackpot()
-A.face_counts()
-A.combo_count()
-A.permutation_count()
+A = Analyzer(game) #create analyzer with a game object
+A.jackpot() #get number of jackpots in the game
+A.face_counts() #get face counts for all rolls in the game
+A.combo_count() #get combination counts for game
+A.permutation_count() #get permutation counts for game
 ```
 
 
