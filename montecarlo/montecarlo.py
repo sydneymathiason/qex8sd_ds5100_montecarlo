@@ -1,14 +1,10 @@
 import numpy as np
 import pandas as pd
 
-import numpy as np
-import pandas as pd
-
 class Die:
     """
     Represents a Die object that simulates a fair or weighted die.
 
-<<<<<<< HEAD
     Attributes
     ----------
     faces : numpy.ndarray
@@ -25,9 +21,6 @@ class Die:
     ----
     The Die object starts with equal weights for all faces.
 
-    """
-
-=======
     Attributes:
         faces (numpy.ndarray): An array representing the possible faces of the die.
 
@@ -38,7 +31,6 @@ class Die:
     Note:
         The Die object starts with equal weights for all faces.
     """
->>>>>>> 976e87f873a5e2b142af6077b021cb7dce62ebb7
     def __init__(self, faces):
         """
         Create a Die object with specified faces and equal weights.
