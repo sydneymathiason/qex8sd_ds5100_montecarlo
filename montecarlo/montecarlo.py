@@ -260,8 +260,5 @@ class Analyzer:
         """
         permutations = self._game.show_result().groupby(list(range(len(self._game._dice))))
         permutation_counts = permutations.value_counts()
-<<<<<<< HEAD
         return pd.DataFrame({"count": permutation_counts})
-=======
-        return pd.DataFrame({"count": permutation_counts})
->>>>>>> 976e87f873a5e2b142af6077b021cb7dce62ebb7
+
