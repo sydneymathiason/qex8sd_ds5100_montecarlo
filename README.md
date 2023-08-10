@@ -1,9 +1,9 @@
 # Monte Carlo Game Simulator
 
-## Author: Sydney Mathiason
+### Author: Sydney Mathiason
 
 
-# Synopsis
+## Synopsis
 
 #### Install
 
@@ -45,7 +45,7 @@ A.permutation_count() #get permutation counts for game
 ```
 
 
-# API Documentation
+## API Documentation
 
 ```
 NAME
