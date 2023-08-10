@@ -1,26 +1,27 @@
-# Metadata
+# Monte Carlo Game Simulator
 
-#### Project Name: Monte Carlo Game Simulator
-
-#### Author: Sydney Mathiason
+## Author: Sydney Mathiason
 
 
 # Synopsis
 
 #### Install
-```
+
+After downloading git repository to your computer, 
+
+```python
 pip install -e .
 ```
 
 #### Import
-```
+```python
 from montecarlo.montecarlo import Die, Game, Analyzer
 ```
 
 #### Use
 
 ##### Die
-```
+```python
 die = Die(np.array([1,2,3,4,5,6])) #create die with array of faces
 die.change_weight(6, 5) #change weight of a face by specifying face and weight
 die.roll(5) #roll die a give number of times
@@ -28,14 +29,14 @@ die.show_state() #show current state of die with
 ```
 
 ##### Game
-```
+```python
 game = Game([die, die, die]) #create game with list of Die objects
 game.play(1000) #play game by specifying number of rolls
 game.show_result() #show results of most recent game play in a data frame
 ```
 
 ##### Analyzer
-```
+```python
 A = Analyzer(game) #create analyzer with a game object
 A.jackpot() #get number of jackpots in the game
 A.face_counts() #get face counts for all rolls in the game
