@@ -21,8 +21,6 @@ class Die:
     ----
     The Die object starts with equal weights for all faces.
 
-    Attributes:
-        faces (numpy.ndarray): An array representing the possible faces of the die.
     """
     def __init__(self, faces):
         """
@@ -69,7 +67,7 @@ class Die:
         if face not in self._die_state.index:
             raise IndexError("Invalid face value.")
             
-        if not isinstance(new_weight, (int, float)) or str(new_weight).isnumeric():
+        if not (isinstance(new_weight, (int, float)) or str(new_weight).isnumeric()):
             raise TypeError("Invalid weight type.")
         
         self._die_state.at[face, "weights"] = new_weight

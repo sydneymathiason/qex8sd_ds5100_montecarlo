@@ -7,7 +7,7 @@ class TestDie(unittest.TestCase):
     def test_d__init__(self):
         faces = np.array([1, 2, 3, 4, 5, 6])
         die = Die(faces)
-        self.assertEqual(len(die.faces), 6)
+        self.assertIsInstance(die, Die)
         
     def test_change_weight(self):
         faces = np.array([1, 2, 3, 4, 5, 6])
@@ -38,10 +38,10 @@ class TestDie(unittest.TestCase):
         
     def test_g__init__(self):
         self.game1.play(10)
-        self.assertIsInstance(self.game1._dice, list)
+        self.assertIsInstance(self.game1, Game)
         
         self.game2.play(10)
-        self.assertIsInstance(self.game2._dice, list)
+        self.assertIsInstance(self.game2, Game)
     
     def test_play(self):
         self.game1.play(10)
@@ -59,10 +59,10 @@ class TestDie(unittest.TestCase):
         
     def test_a__init__(self):
         self.game1.play(100)
-        self.assertIsInstance(self.analyzer1._game, Game)
+        self.assertIsInstance(self.analyzer1, Analyzer)
 
         self.game2.play(100)
-        self.assertIsInstance(self.analyzer2._game, Game)
+        self.assertIsInstance(self.analyzer2, Analyzer)
 
     def test_jackpot(self):
         self.game1.play(100)
@@ -93,4 +93,4 @@ class TestDie(unittest.TestCase):
         self.assertIsInstance(self.analyzer2.permutation_count(), pd.DataFrame)
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=3)

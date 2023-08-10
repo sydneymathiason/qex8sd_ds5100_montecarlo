@@ -1,5 +1,17 @@
-............
+test_a__init__ (__main__.TestDie) ... ok
+test_change_weight (__main__.TestDie) ... ok
+test_combo_count (__main__.TestDie) ... ok
+test_d__init__ (__main__.TestDie) ... ok
+test_face_counts_per_roll (__main__.TestDie) ... ok
+test_g__init__ (__main__.TestDie) ... ok
+test_jackpot (__main__.TestDie) ... ok
+test_permutation_count (__main__.TestDie) ... ok
+test_play (__main__.TestDie) ... ok
+test_roll (__main__.TestDie) ... ok
+test_show_results (__main__.TestDie) ... ok
+test_show_state (__main__.TestDie) ... ok
+
 ----------------------------------------------------------------------
-Ran 12 tests in 0.242s
+Ran 12 tests in 0.237s
 
 OK
