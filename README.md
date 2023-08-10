@@ -7,7 +7,7 @@
 
 #### Install
 
-After downloading git repository to your computer, 
+After downloading this repository to your computer, navigate to the folder in the command line and run the following line.
 
 ```python
 pip install -e .
